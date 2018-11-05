@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-robot.hear ./PickACard/i, (msg) ->
+robot.respond /PickACard/i, (msg) ->
     random = (number) ->
       return Math.floor(Math.random() * 13) + 1
     
